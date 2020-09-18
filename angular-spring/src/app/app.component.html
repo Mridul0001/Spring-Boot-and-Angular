@@ -1,0 +1,12 @@
+<h3 class="main">Search for Employees</h3>
+<form class="main">
+  <input type="search" placeholder="Search by name" [value]="searchText" (input)="onChange($event)"/>
+  <button (click)="searchClicked($event)">Search</button>
+</form>
+<app-employee
+  [id]="id"
+  [name]="name"
+  [dep]="dep"
+  [des]="des"
+  [loc]="loc"
+></app-employee>
